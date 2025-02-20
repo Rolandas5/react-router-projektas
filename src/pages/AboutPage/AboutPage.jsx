@@ -1,16 +1,15 @@
-import { ProfileImage } from './components/ProfileImage';
+import './about.css';
 
 export const AboutPage = () => {
   return (
-    <section>
-      <h1>Aboutpage</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        voluptate accusantium ipsam reiciendis porro in nihil illum officiis
-        incidunt. Provident obcaecati commodi minima voluptate cupiditate,
-        molestias at consequatur dicta similique?
-      </p>
-      <ProfileImage />
+    <section className="about">
+      <h2>About</h2>
+      <div className="team">
+        <div>
+          <h3>Our Team</h3>
+          <p>Meet our amazing team!</p>
+        </div>
+      </div>
     </section>
   );
 };

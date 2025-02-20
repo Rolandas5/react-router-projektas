@@ -1,16 +1,20 @@
-import { HomeDetails } from './components/HomeDetails';
+import { InfoCard } from './components/InfoCard';
+import './homepage.css';
 
 export const HomePage = () => {
   return (
-    <section>
+    <section className="home">
       <h1>Homepage</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-        voluptate accusantium ipsam reiciendis porro in nihil illum officiis
-        incidunt. Provident obcaecati commodi minima voluptate cupiditate,
-        molestias at consequatur dicta similique?
-      </p>
-      <HomeDetails />
+      <div className="featured-content">
+        <InfoCard
+          title={'Latest News'}
+          description={'Stay updated with our newest features.'}
+        />
+        <InfoCard
+          title={'Popular Articles'}
+          description={'Check out our mos popular articles'}
+        />
+      </div>
     </section>
   );
 };
