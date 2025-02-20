@@ -19,3 +19,7 @@
 .social-icon span {
   font-weight: bold;
 }
+
+.social-icon span:hover {
+  color: #ffdd57;
+}

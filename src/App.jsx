@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Routes - komponentas, kuriame aprašomi visi galimi URL'ai (arba routes)
 // Route - komponentas, kuris nurodo, ka rodyti, kai URL'as atitinka nurodyta kelią
 import { NavBar } from './NavBar/NavBar';
+import { Footer } from './Footer/Footer';
 import { HomePage } from './pages/HomePage/HomePage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
 import { ContactsPage } from './pages/ContactsPage/ContactsPage';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
