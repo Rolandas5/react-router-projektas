@@ -1,17 +1,26 @@
-.footer-content {
+.footer-container {
   background: black;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.footer-content {
-  background: black;
-  padding: 1rem 2rem;
+  padding: 0.3rem 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  background: black;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-left {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .footer {
@@ -19,13 +28,14 @@
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
+  color: black;
 }
 
-nav ul li a {
+.footer-a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 nav ul li a:hover {

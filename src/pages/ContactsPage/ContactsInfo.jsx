@@ -1,17 +1,12 @@
 import './contactspage.css';
 import './socialicons.css';
 
-export function ContactInfo() {
+export function ContactsInfo() {
   return (
     <div className="contact-info">
-      <h2>Kontaktai:</h2>
-      <br />
-      <p>Marijampolė, LT</p>
-      <br />
-      <p>📞 (0 700) 96053</p>
-      <br />
-      <p>📧 info@vairuva.lt</p>
-      <br />
+      <h2>Contact Information</h2>
+      <p>Phone: 📞 (0 700) 12345</p>
+      <p>Email: 📧 info@example.com</p>
       <div className="social-icons">
         <a
           href="https://www.facebook.com"
@@ -57,3 +52,5 @@ export function ContactInfo() {
     </div>
   );
 }
+
+export default ContactsInfo;

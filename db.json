@@ -1,0 +1,14 @@
+{
+  "blogs": [
+    {
+      "id": "ec31",
+      "name": "Blogo pavadinimas",
+      "description": "Blogo aprasymas"
+    },
+    {
+      "name": "Blogelio",
+      "description": "Turinys Atnaujinimas ar viskas gerai",
+      "id": "6bb3"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 import './contactspage.css';
 import { ContactForm } from './ContactForm';
-import { ContactInfo } from './ContactInfo';
+import { ContactsInfo } from './ContactsInfo';
 
 export function ContactsPage() {
   return (
     <div className="contacts-page">
       <ContactForm />
-      <ContactInfo />
+      <ContactsInfo />
     </div>
   );
 }
