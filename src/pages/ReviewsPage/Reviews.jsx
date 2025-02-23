@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import './reviews.css';
 import { api } from '../../constants/globalConstants';
 
 const Reviews = () => {
@@ -10,7 +11,6 @@ const Reviews = () => {
       try {
         // Naudojame GET metodą
         const response = await axios.get(`${api}/reviews`);
-        console.log('Gauti duomenys iš serverio:', response.data); // <-- ČIA PATIKRINSI!
         setReviews(response.data);
       } catch (error) {
         console.error('Klaida gaunant atsiliepimus:', error);
@@ -20,16 +20,18 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Reviews</h1>
-      <ul>
+    <section className="reviews">
+      <h2>Reviews</h2>
+      <div className="reviews-list">
         {reviews.map((review) => (
-          <li key={review.id}>
-            <strong>{review.name}</strong> ({review.email}): {review.message}
-          </li>
+          <div key={review.id} className="review-item">
+            <h3>{review.name}</h3>
+            <p>{review.message}</p>
+            <small>{review.email}</small>
+          </div>
         ))}
-      </ul>
-    </div>
+      </div>
+    </section>
   );
 };
 
