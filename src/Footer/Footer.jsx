@@ -22,6 +22,11 @@ export const Footer = () => {
               Contacts
             </Link>
           </li>
+          <li>
+            <Link className="footer-a" to="/reviews">
+              Reviews
+            </Link>
+          </li>
         </ul>
       </nav>
     </footer>

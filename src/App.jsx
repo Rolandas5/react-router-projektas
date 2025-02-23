@@ -7,6 +7,7 @@ import { Footer } from './Footer/Footer';
 import { HomePage } from './pages/HomePage/HomePage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
 import { ContactsPage } from './pages/ContactsPage/ContactsPage';
+import Reviews from './pages/ReviewsPage/Reviews';
 
 // / - homepage
 // /about - About page
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/reviews" element={<Reviews />} />
       </Routes>
       <Footer />
     </Router>

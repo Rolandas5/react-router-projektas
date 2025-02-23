@@ -14,6 +14,9 @@ export const NavBar = () => {
         <li>
           <Link to="/contacts">Contacts</Link>
         </li>
+        <li>
+          <Link to="/reviews">Reviews</Link>
+        </li>
       </ul>
     </nav>
   );

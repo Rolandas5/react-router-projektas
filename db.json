@@ -1,14 +1,14 @@
 {
-  "blogs": [
+  "reviews": [
     {
-      "id": "ec31",
-      "name": "Blogo pavadinimas",
-      "description": "Blogo aprasymas"
+      "id": 1,
+      "name": "John Doe",
+      "message": "Great service and very professional!"
     },
     {
-      "name": "Blogelio",
-      "description": "Turinys Atnaujinimas ar viskas gerai",
-      "id": "6bb3"
+      "id": 2,
+      "name": "Jane Smith",
+      "message": "I had an amazing experience, highly recommend!"
     }
   ]
 }
