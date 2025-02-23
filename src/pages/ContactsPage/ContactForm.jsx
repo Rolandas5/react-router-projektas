@@ -3,26 +3,23 @@ import axios from 'axios';
 import './contactspage.css';
 import { api } from '../../constants/globalConstants';
 
-export const ContactForm = () => {
+const ContactPage = () => {
+  // būsena saugo vartotojo įvestą vardą.
   const [name, setName] = useState('');
+  // būsena saugo vartotojo įvestą el. paštą.
   const [email, setEmail] = useState('');
+  // būsena saugo vartotojo įvestą žinutę.
   const [message, setMessage] = useState('');
 
+  // handleSubmit funkcija apdoroja formos pateikimą.
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const newReview = { name, message };
-
+    // Sukuriamas naujas objektas `newReview`, kuris apima įvestus duomenis.
+    const newReview = { name, email, message };
     try {
-      // Siunčiame POST užklausą
-      await axios.post(`${api}/reviews`, newReview);
-      setName('');
-      setEmail('');
-      setMessage('');
-      alert('Review submitted!');
-    } catch (error) {
-      console.error('Error submitting review:', error);
-    }
+      const response = await axios.post(`${api}/reviews`, newReview);
+      console.log('Atsakymas iš serverio:', response.data);
+    } catch (error) {}
   };
 
   return (
@@ -59,4 +56,4 @@ export const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactPage;

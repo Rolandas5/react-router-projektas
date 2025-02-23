@@ -10,12 +10,12 @@ const Reviews = () => {
       try {
         // Naudojame GET metodą
         const response = await axios.get(`${api}/reviews`);
+        console.log('Gauti duomenys iš serverio:', response.data); // <-- ČIA PATIKRINSI!
         setReviews(response.data);
       } catch (error) {
-        console.error('Error fetching reviews:', error);
+        console.error('Klaida gaunant atsiliepimus:', error);
       }
     }
-
     fetchReviews();
   }, []);
 
@@ -25,7 +25,7 @@ const Reviews = () => {
       <ul>
         {reviews.map((review) => (
           <li key={review.id}>
-            <strong>{review.name}</strong>: {review.message}
+            <strong>{review.name}</strong> ({review.email}): {review.message}
           </li>
         ))}
       </ul>

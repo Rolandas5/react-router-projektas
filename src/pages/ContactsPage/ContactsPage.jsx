@@ -1,6 +1,6 @@
 import './contactspage.css';
-import { ContactForm } from './ContactForm';
 import { ContactsInfo } from './ContactsInfo';
+import ContactForm from './ContactForm';
 
 export function ContactsPage() {
   return (
