@@ -3,7 +3,7 @@ import axios from 'axios';
 import './contactspage.css';
 import { api } from '../../constants/globalConstants';
 
-const ContactPage = () => {
+const ContactForm = () => {
   // būsena saugo vartotojo įvestą vardą.
   const [name, setName] = useState('');
   // būsena saugo vartotojo įvestą el. paštą.
@@ -11,7 +11,7 @@ const ContactPage = () => {
   // būsena saugo vartotojo įvestą žinutę.
   const [message, setMessage] = useState('');
 
-  // handleSubmit funkcija apdoroja formos pateikimą.
+  // handleSubmit funkcija pateikia formą.
   const handleSubmit = async (event) => {
     event.preventDefault();
     // Sukuriamas naujas objektas `newReview`, kuris apima įvestus duomenis.
@@ -56,4 +56,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactForm;

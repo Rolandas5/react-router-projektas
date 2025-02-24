@@ -1,18 +1,6 @@
 {
   "reviews": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "email": "z.lektoriuss@gmail.com",
-      "message": "Great service and very professional!"
-    },
-    {
-      "id": "2",
-      "name": "Jane Smith",
-      "email": "bekto@gmail.com",
-      "message": "I had an amazing experience, highly recommend!"
-    },
-    {
       "id": "1160",
       "name": "Rolandas ",
       "email": "r.bendorius@gmail.com",
@@ -29,6 +17,12 @@
       "name": "Bendorius",
       "email": "r.bendorius@gmail.com",
       "message": "dfdfggdfh"
+    },
+    {
+      "id": "3a54",
+      "name": "Monica",
+      "email": "m@gmail.com",
+      "message": "Alio, puiku. Ok."
     }
   ]
 }
