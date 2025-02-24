@@ -10,7 +10,7 @@ const Reviews = () => {
     async function fetchReviews() {
       try {
         // Naudojame GET metodą
-        const response = await axios.get(`${api}/reviews`);
+        const response = await axios.get(`${api}`);
         setReviews(response.data);
       } catch (error) {
         console.error('Klaida gaunant atsiliepimus:', error);

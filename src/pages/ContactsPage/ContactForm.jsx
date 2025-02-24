@@ -4,22 +4,28 @@ import './contactspage.css';
 import { api } from '../../constants/globalConstants';
 
 const ContactForm = () => {
-  // būsena saugo vartotojo įvestą vardą.
+  // saugo vartotojo įvestą vardą.
   const [name, setName] = useState('');
-  // būsena saugo vartotojo įvestą el. paštą.
+  // saugo vartotojo įvestą el. paštą.
   const [email, setEmail] = useState('');
-  // būsena saugo vartotojo įvestą žinutę.
+  // saugo vartotojo įvestą žinutę.
   const [message, setMessage] = useState('');
 
   // handleSubmit funkcija pateikia formą.
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Sukuriamas naujas objektas `newReview`, kuris apima įvestus duomenis.
+    // naujas objektas, kuris apima įvestus duomenis.
     const newReview = { name, email, message };
     try {
-      const response = await axios.post(`${api}/reviews`, newReview);
+      const response = await axios.post(`${api}`, newReview);
       console.log('Atsakymas iš serverio:', response.data);
-    } catch (error) {}
+    } catch (error) {
+      console.error('error');
+    } finally {
+      useState('');
+      useState('');
+      useState('');
+    }
   };
 
   return (
